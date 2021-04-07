@@ -7,8 +7,8 @@
         vpc_subnet_id: subnet-c8c5cca0
         group_id: sg-026dd3773ee684723
         key_name: aws_putty
-        aws_access_key: AKIAQX3XGKNLPADLDFWX
-        aws_secret_key: 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
+        aws_access_key: {{ access_key }}
+        aws_secret_key: {{ secret_key }}
         assign_public_ip: yes
         wait: yes
   register: x1
@@ -26,8 +26,8 @@
         vpc_subnet_id: subnet-c8c5cca0
         group_id: sg-026dd3773ee684723
         key_name: aws_putty
-        aws_access_key: AKIAQX3XGKNLPADLDFWX
-        aws_secret_key: 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
+        aws_access_key: {{ access_key }}
+        aws_secret_key: {{ secret_key }}
         assign_public_ip: yes
         wait: yes
         count: "{{ count_slaves }}" 
